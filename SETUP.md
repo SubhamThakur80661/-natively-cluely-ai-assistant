@@ -56,3 +56,6 @@ or Groq Whisper (cloud, no local worker at all).
 
 Note: this repo uses Git Large File Storage (LFS) for the .onnx model files. Git for Windows includes LFS by default, so a normal clone gets the real model files. If you clone on a system without LFS, run 'git lfs install' then 'git lfs pull'.
 
+
+Note: the upstream default Google OAuth client secret for Antigravity was removed from electron/services/AntigravityService.ts (GitHub push protection blocks it). To use Antigravity, put your own Google OAuth client secret there.
+
