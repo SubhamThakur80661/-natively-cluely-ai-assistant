@@ -53,3 +53,6 @@ and local Whisper can fall behind live audio when the machine is loaded.
 Close heavy apps before a session. Faster options: Moonshine
 (`onnx-community/moonshine-base-ONNX`, selectable in Settings → Audio)
 or Groq Whisper (cloud, no local worker at all).
+
+Note: this repo uses Git Large File Storage (LFS) for the .onnx model files. Git for Windows includes LFS by default, so a normal clone gets the real model files. If you clone on a system without LFS, run 'git lfs install' then 'git lfs pull'.
+
